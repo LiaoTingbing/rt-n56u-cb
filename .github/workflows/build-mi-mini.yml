@@ -1,17 +1,18 @@
 name: Build MI-MINI
 
 on: 
-  release:
-    types: [published]
-#  push:
-#    tags:
-#    - 'v*'
-  #  branches: 
-  #    - master
- # schedule:
- #   - cron: 0 17 * * 4
-  watch:
-    types: [started]
+    workflow_dispatch:
+#   release:
+#     types: [published]
+# #  push:
+# #    tags:
+# #    - 'v*'
+#   #  branches: 
+#   #    - master
+#  # schedule:
+#  #   - cron: 0 17 * * 4
+#   watch:
+#     types: [started]
 
 jobs:
   build:
